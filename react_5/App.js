@@ -41,7 +41,7 @@ class Activity extends React.Component {
 const AddActivity = () => {
   const dodajzadanie = () => {
     console.log("TUTAJ");
-    listaZadan.push("Nosz kurwa mać!!!");
+    listaZadan.push("Dodana nowa wartość do listy ale jest bezużyteczna bo nie ma żadnego wpływu na stan komponentu klasowego");
   }
 
   return (
