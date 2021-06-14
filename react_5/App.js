@@ -1,4 +1,5 @@
-var listaZadan = ["Czynność z listy", "Czynność z listy -2", "xd"]
+var listaZadan = ["Czynność z listy", "Czynność z listy -2", "xd", "Zrobić zakupy"]
+
 class Todolist extends React.Component {
   render() {
     return (
@@ -30,17 +31,17 @@ class Activity extends React.Component {
   render() {
     return (
       <div className="activity">
-        <h1>{this.props.name} -> {this.state.completed ? "Ukończone" : "Nieukończone"}</h1>
+        <h1 className="title">{this.props.name}</h1>
+        <h2>Status: {this.state.completed ? <span className="green">Ukończone</span> : <span className="red">Nieukończone</span>}</h2>
         <button onClick={this.wykonano}>{this.state.completed ? "Niewykonano" : "Wykonano"}</button>
       </div>
     )
   }
 }
 const AddActivity = () => {
-  const [list, setList] = React.useState(listaZadan);
   const dodajzadanie = () => {
     console.log("TUTAJ");
-    listaZadan.push("NOsz kurwa ać");
+    listaZadan.push("Nosz kurwa mać!!!");
   }
 
   return (
