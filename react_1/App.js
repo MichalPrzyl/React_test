@@ -1,19 +1,28 @@
 class App extends React.Component {
   state = {
-    counter: 1,
+    value: ""
   }
-  add = () => {
-    this.setState({ counter: '5' })
+
+  handleInputChange = (e) => {
+    this.setState({
+      value: e.target.value
+    })
+  }
+
+  reset = () => {
+    this.setState({
+      value: ""
+    })
   }
   render() {
     return (
       <React.Fragment>
-        <h1>{this.state.counter}</h1>
-        <button onClick={this.add}>Dodaj</button>
+        <input value={this.state.value} placeholder="Wpisz..." onChange={this.handleInputChange} type="text" />
+        <button onClick={this.reset}>Reset</button>
+        <h1 className="title">{this.state.value.toUpperCase()}</h1>
       </React.Fragment>
-    );
+    )
   }
 }
 
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'));
