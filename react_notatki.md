@@ -80,4 +80,4 @@ Działa tak samo jak findIndex(), ale zamiast indeksu pierwszego elementu, któr
 ```
 {wyrażenie && <button>Przycisk</button>}
 ```
-Jeśli wyrażenie po lewej zwróci false to zostanie zwrócone false z całości. Jeśli warunek po lewej zwróci true to z całości zostanie zwrócony element po prawej.
+Jeśli wyrażenie po lewej zwróci false to zostanie zwrócone wyrażenie z lewej (w tym przypadku to będzie false, ponieważ taki wynik zwraca to wyrażenie). Jeśli warunek po lewej zwróci true to z całości zostanie zwrócony element po prawej.
