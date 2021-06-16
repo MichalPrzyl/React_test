@@ -76,3 +76,8 @@ console.log(isUserAdult); // zwróci nam index elementu który spełnia warunek,
 ### find() ###
 Działa tak samo jak findIndex(), ale zamiast indeksu pierwszego elementu, który spełni warunek, zwróci cały element.
 
+### Operatory logiczne ###
+```
+{wyrażenie && <button>Przycisk</button>}
+```
+Jeśli wyrażenie po lewej zwróci false to zostanie zwrócone false z całości. Jeśli warunek po lewej zwróci true to z całości zostanie zwrócony element po prawej.
